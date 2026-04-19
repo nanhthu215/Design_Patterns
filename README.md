@@ -108,6 +108,5 @@ This project was built to demonstrate proficiency in:
 
 ---
 
-**Author**: `nanhthu215`  
 **Project**: Design Patterns Final Examination  
 **Status**: 🏆 Production Ready for Defense
