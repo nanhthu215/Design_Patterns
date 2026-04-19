@@ -113,7 +113,11 @@ class ProductController {
       }
 
       // 🔄 Sử dụng Factory để lấy thông tin đặc trưng (Enrichment)
+      console.log('\n' + '='.repeat(50));
+      console.log('🏗️  [DEMO] FACTORY PATTERN IS TRIGGERED');
+      console.log(`🔹 Requested Category: ${product.category}`);
       const factoryProduct = ProductFactory.createProduct(product.category, product);
+      console.log('='.repeat(50) + '\n');
 
       const transformedProduct = {
         id: product.id || product._id,
@@ -279,7 +283,11 @@ class ProductController {
       }
 
       // ⭐ FACTORY PATTERN: Delegate product creation to Factory
+      console.log('\n' + '*'.repeat(50));
+      console.log('🏭 [DEMO] FACTORY PATTERN: CREATING NEW PRODUCT');
+      console.log(`🔹 Target Type: ${type}`);
       const factoryProduct = ProductFactory.createProduct(type, payload);
+      console.log('*'.repeat(50) + '\n');
 
 
       // Auto-generate unique numeric ID (max existing + 1)
